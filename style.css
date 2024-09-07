@@ -39,6 +39,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 100px;
+    position: relative;
 }
 
 .caixa-principal {
@@ -66,7 +67,7 @@ video {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
-p {
+.caixa-principal #texto-p {
     font-family: 20px;
     color: #ffffff;
     letter-spacing: 2px;
@@ -140,4 +141,51 @@ textarea {
     top: 0;
     background: linear-gradient(109deg, rgba(10,12,16,1) 1%, rgba(10,12,16,0.908000700280112) 50%, rgba(2,0,4,1) 100%);
     transition: visibility 1s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    .cabeçalho {
+        gap: 30px;
+        margin: 40px 0;
+    }
+
+    .caixa-mãe .logo-mario {
+        height: 150px;
+        margin-left: -50px;
+    }
+
+    .imagem-mario-luigi {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .caixa-mãe {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .caixa-principal {
+        margin-left: -40px;
+    }
+  
+    .caixa-principal p {
+        font-size: 15px;
+        letter-spacing: 0;
+        width: 200px;
+    }
+
+    .caixa-principal #titulo {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    .link-whatsapp {
+        position: relative;
+        height: 40px;
+        left: 80%;
+        bottom: 10px;
+    }
 }
